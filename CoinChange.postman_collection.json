@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "ac98ce4d-7fdd-40d3-81d4-5be26f7bab71",
+		"name": "CoinChange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetCoinChange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/10/coinChange?getMaximumCoins=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"10",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/10/coinChange?getMaximumCoins=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"10",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/10/coinChange?getMaximumCoins=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"10",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/10/coinChange?getMaximumCoins=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"10",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 5 - Not Enough Coins Left",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/10/coinChange?getMaximumCoins=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"10",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/1/coinChange?getMaximumCoins=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"1",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 6 - No Coins Left",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/10/coinChange?getMaximumCoins=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"10",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recharge Coins",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coins\":[\n        {\n            \"coinValue\": \"0.25\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.1\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.05\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.01\",\n            \"quantity\":\"100\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/coins/recharges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coins",
+						"recharges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 6 with maximum coins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/10/coinChange?getMaximumCoins=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"10",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 6 with Invalid Bill",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/200/coinChange?getMaximumCoins=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"200",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCoinChange 6 with Invalid value for getMaximumCoins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bills/10/coinChange?getMaximumCoins=trued",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills",
+						"10",
+						"coinChange"
+					],
+					"query": [
+						{
+							"key": "getMaximumCoins",
+							"value": "trued"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recharge Coins Invalid Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coins\":[\n        {\n            \"coinValue\": \"0.20\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.1\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.05\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.01\",\n            \"quantity\":\"100\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/coins/recharges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coins",
+						"recharges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recharge Coins Invalid Request 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coins\":[\n        {\n            \"coinValue\": \"0.25AB\",\n            \"quantity\":\"100D\"\n        },\n        {\n            \"coinValue\": \"0.1\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.05\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.01\",\n            \"quantity\":\"100\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/coins/recharges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coins",
+						"recharges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recharge Coins Invalid Request 1 Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coins\":[\n        {\n            \"coinValue\": \"0.25D\",\n            \"quantity\":\"100D\"\n        },\n        {\n            \"coinValue\": \"0.1\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.05\",\n            \"quantity\":\"100\"\n        },\n        {\n            \"coinValue\": \"0.01\",\n            \"quantity\":\"100\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/coins/recharges",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coins",
+						"recharges"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

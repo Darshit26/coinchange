@@ -53,8 +53,6 @@ public class DemoServiceImpl implements DemoService {
                     coin.setQuantity(demoRepository.getAvailableQuantity(coin.getCoinValue()));
                 } else {
                     coin.setQuantity(numberOfCoinsNeeded);
-                    //remainingAmount = remainingAmount - (numberOfCoinsNeeded * supportedCoins.get(i));
-                    //availableCoinsMap.put(supportedCoins.get(i), getAvailableQuantity(supportedCoins.get(i)) - numberOfCoinsNeeded);
                 }
                 //subtract remaining amount with the monetary amount of coins used
                 remainingAmount = remainingAmount - (coin.getQuantity() * coin.getCoinValue());

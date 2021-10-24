@@ -82,8 +82,10 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public CoinRechargeResponse rechargeCoins(CoinRechargeRequest coinRechargeRequest) throws Exception {
         CoinRechargeResponse coinRechargeResponse = new CoinRechargeResponse();
+        //update the coin quantity in backend
         coinRechargeRequest.getCoins().stream().forEach(coin -> demoRepository.updateAvailableQuantity(coin.getCoinValue(), (demoRepository.getAvailableQuantity(coin.getCoinValue()) + coin.getQuantity())));
         List<Coin> coinList = new ArrayList<>();
+        //retrieve coin quantity from backend
         supportedCoins.stream().forEach(sc -> {
             Coin coin = new Coin();
             coin.setCoinValue(sc);
